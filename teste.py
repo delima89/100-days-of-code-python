@@ -1,3 +1,3 @@
 print("hello world")
 print("meu")
-print
+print("deu certo")

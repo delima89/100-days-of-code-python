@@ -1,3 +1,1 @@
-print("hello world")
-print("meu")
-print
+print("hello world\nhello world")

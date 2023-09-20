@@ -1,0 +1,6 @@
+print("bem vindo a calculadora de gojetar.")
+total=input("total da conta?\n")
+porcetangem=input("quanto de gorjeta voce que dar ? 10,12 ou 15\n")
+pessoas=input("voce que dividi a conta em quantas pessoas?\n")
+total_gojeta=(float(total) + (float(total) *(float(porcetangem) / 100))) / float(pessoas)
+print("cada um dever pagar : $",round(total_gojeta,2))

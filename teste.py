@@ -1,1 +1,3 @@
-print("hello world\nhello world")
+print("hello world")
+print("meu")
+print

@@ -1,6 +1,6 @@
 import random
 computador=random.randint(0,2)
-eu=int(input("What do you chosse? Type 0 for rock, 1 for Paper or 2 for Scissors."))
+eu=int(input("What do you chosse? Type 0 for rock, 1 for Paper or 2 for Scissors.\n"))
 Rock=("""
     _______
 ---'   ____)
@@ -51,4 +51,6 @@ elif  eu== 2:
         print(f"your opponent chose paper:\n{Paper}\nyou win.")
     else:
         print(f"your opponent chose scissors:\n{Scissors}\ndraw.")
+else:
+    print("you have chosen an invalid number")
         

@@ -9,20 +9,17 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 all=random.randint(0,nr_letters)
 senha=[]
-senha.append(letters[all])
-senha.append(symbols[all])
-senha.append(numbers[all])
 receba=0
 tu=nr_letters+nr_numbers+nr_symbols
 ju=""
 ad=""
-for l in range(1,int(nr_letters)):
+for l in range(1,int(nr_letters)+1):
     all=random.randint(0,nr_letters)
     senha.append(letters[all])
-for s in range(1,int(nr_symbols)):
+for s in range(1,int(nr_symbols)+1):
     all=random.randint(0,nr_symbols)
     senha.append(symbols[all])
-for n in range(1,int(nr_numbers)):
+for n in range(1,int(nr_numbers)+1):
     all=random.randint(0,nr_numbers)
     senha.append(numbers[all])
 for senh in range(1,tu+1):

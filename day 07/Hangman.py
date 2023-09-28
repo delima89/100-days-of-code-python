@@ -13,16 +13,10 @@ pics = ["  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========",
 
         "  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n========="] 
 
-word_list =('ant baboon badger bat bear beaver camel cat clam cobra cougar '
-         'coyote crow deer dog donkey duck eagle ferret fox frog goat '
-         'goose hawk lion lizard llama mole monkey moose mouse mule newt '
-         'otter owl panda parrot pigeon python rabbit ram rat raven '
-         'rhino salmon seal shark sheep skunk sloth snake spider '
-         'stork swan tiger toad trout turkey turtle weasel whale wolf '
-         'wombat zebra ').split()
+word_list =('Maça, Sol, Montanha, Livro, Girafa, Bicicleta, Piano, Oceano, Chocolate, Avião, Flores, Chapéu, Lua, Caneta, Tigre,, Sapato, Esmeralda, Abacaxi, Guitarra.').split(", ")
 display=[]
 random.shuffle(word_list)
-check=word_list[1]
+check=word_list[1].lower()
 count=0
 count1=0
 count2=1
@@ -39,6 +33,7 @@ for b in range (0,len(check)):
     display+=["_"]
 print(f"{logo}\nBem vindo ao jogo da foca")
 medida=display.count("_")
+print(display)
 while display.count("_") >0:    
     count1+=1
     guess=str(input("diga uma letra")).lower()

@@ -1,5 +1,5 @@
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def encrypt(text,shift):
     codigo=""
@@ -22,7 +22,7 @@ yes=""
 while not yes =="no":
     direction = input("digite 'encode' para codificado, degite 'decode' to decodificado:\n")
     text = input("Type your message:\n").lower()
-    shift = int(input("digite um numero:\n"))
+    shift = int(input("digite um numero entre 1 e 9:\n"))
     if str(direction) == "encode":
         encrypt(text,shift)
     elif direction == "decode":

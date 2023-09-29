@@ -18,14 +18,16 @@ def encrypt(text,shift,diretion):
                     codigo+=char
             print(f"aqui esta sua mesangem codificada :{codigo} !")
         elif direction == "decode":
-            for char in alphabet:
+            for char in text:
                 if char in alphabet:
                     posição=alphabet.index(char)
                     nova_posição=posição-shift
                     nova_letra=alphabet[nova_posição]
                     codigo+=nova_letra
+                
                 else:
                     codigo+=char
+            print(f"aqui esta sua mesangem codificada :{codigo} !")        
         else:
             print("erro")
             print(f"aqui esta sua mensagem decodificado :{codigo} !")
